@@ -15,8 +15,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 
 
-
-
     // Update is called once per frame
     void Update()
     {

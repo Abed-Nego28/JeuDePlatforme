@@ -11,8 +11,15 @@ public class LoadSpecificScene : MonoBehaviour
 
     private void Awake()
     {
-        fadeSystem = GameObject.FindGameObjectWithTag("FadeSystem").GetComponent<Animator>();
+        if (fadeSystem == null)
+            fadeSystem = GameObject.FindGameObjectWithTag("FadeSystem").GetComponent<Animator>();
     }
+
+    public void LoadScene()
+    {
+        StartCoroutine(loadNextScene());
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

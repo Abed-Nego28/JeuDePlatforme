@@ -184,7 +184,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 46.03677
+  orthographic size: 42.116257
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1823,7 +1823,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 75.9, y: 38.9, z: 0}
-  m_LocalScale: {x: 3.7036963, y: 3.7036963, z: 3.7036963}
+  m_LocalScale: {x: 6.1304536, y: 6.1304536, z: 6.1304536}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1885,6 +1885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be420878d0b1f4aa6a2f3ff1077acfdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: Level2
   fadeSystem: {fileID: 229905606}
 --- !u!1 &581048453
 GameObject:
@@ -3282,8 +3283,8 @@ Transform:
   m_GameObject: {fileID: 865751599}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -75.3, y: -40.7, z: 0}
-  m_LocalScale: {x: 3.4017584, y: -0.6126811, z: 1}
+  m_LocalPosition: {x: -80, y: -40.2, z: 0}
+  m_LocalScale: {x: 9.184748, y: -0.6126811, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

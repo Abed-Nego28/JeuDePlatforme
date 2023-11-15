@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
- /*public class MainMenu : MonoBehaviour
+ public class MainMenu : MonoBehaviour
 {
    public void ExitButton(){
         Application.Quit();
@@ -12,7 +12,6 @@ using UnityEngine.SceneManagement;
     
 
     public void StartGamme(){
-        SceneManagement.LoadScene("Game");
+        SceneManager.LoadScene("Game");
     }
 }
-*/

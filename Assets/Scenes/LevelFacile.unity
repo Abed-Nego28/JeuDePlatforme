@@ -1633,7 +1633,7 @@ Transform:
   m_GameObject: {fileID: 517957337}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 75.9, y: 38.9, z: 0}
+  m_LocalPosition: {x: 55.03, y: -13.28, z: 0}
   m_LocalScale: {x: 6.1304536, y: 6.1304536, z: 6.1304536}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1696,7 +1696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be420878d0b1f4aa6a2f3ff1077acfdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Level2
+  sceneName: LevelMoyen
   fadeSystem: {fileID: 0}
 --- !u!1 &581048453
 GameObject:
@@ -4403,11 +4403,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 628292800324121505, guid: 7c95201c26c4e4e2ebf0d6a3b199cd66, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.33
+      value: 38.67
       objectReference: {fileID: 0}
     - target: {fileID: 628292800324121505, guid: 7c95201c26c4e4e2ebf0d6a3b199cd66, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.85
+      value: -15.33
       objectReference: {fileID: 0}
     - target: {fileID: 628292800324121505, guid: 7c95201c26c4e4e2ebf0d6a3b199cd66, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4443,6 +4443,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7921414592538001363, guid: 7c95201c26c4e4e2ebf0d6a3b199cd66, type: 3}
       propertyPath: m_Name
+      value: PlayerSpawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 7921414592538001363, guid: 7c95201c26c4e4e2ebf0d6a3b199cd66, type: 3}
+      propertyPath: m_TagString
       value: PlayerSpawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []

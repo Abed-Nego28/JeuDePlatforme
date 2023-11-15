@@ -5,8 +5,15 @@ using System.Collections;
 
 public class LoadSpecificScene : MonoBehaviour
 {
+
     public string sceneName;
     public Animator fadeSystem;
+
+    private void Awake()
+    {
+        fadeSystem = GameObject.FindGameObjectWithTag("FadeSystem").GetComponent<Animator>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -15,17 +22,10 @@ public class LoadSpecificScene : MonoBehaviour
             StartCoroutine(loadNextScene());
         }
     }
-
-    public void LoadScene()
-    {
-        StartCoroutine(loadNextScene());
-    }
-
     public IEnumerator loadNextScene()
     {
         fadeSystem.SetTrigger("FadeIn");
         yield return new WaitForSeconds(1f);
-        Debug.Log(sceneName);
         SceneManager.LoadScene(sceneName);
     }
 }

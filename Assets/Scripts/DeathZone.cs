@@ -32,7 +32,6 @@ public class DeathZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // Appeler la fonction TakeDamage de la classe PlayerHealth avec le montant de dégâts que vous voulez appliquer
             collision.GetComponent<PlayerHealth>().TakeDamage(20);
         }
     }

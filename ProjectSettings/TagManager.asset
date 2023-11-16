@@ -6,6 +6,9 @@ TagManager:
   tags:
   - FadeSystem
   - PlayerSpawn
+  - Start
+  - DoorEnd
+  - Timer
   layers:
   - Default
   - TransparentFX

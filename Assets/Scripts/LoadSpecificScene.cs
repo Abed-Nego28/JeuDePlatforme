@@ -6,6 +6,7 @@ using System.Collections;
 public class LoadSpecificScene : MonoBehaviour
 {
 
+    public bool lastDoor = false;
     public string sceneName;
     public Animator fadeSystem;
 
@@ -27,7 +28,19 @@ public class LoadSpecificScene : MonoBehaviour
             Debug.Log("Player has entered the trigger");
         {
             StartCoroutine(loadNextScene());
+            Timer timer = GameObject.FindGameObjectWithTag("Timer").GetComponent<Timer>();
+            if (lastDoor)
+            {
+                if (timer != null)
+                {
+                    timer.StopTimer();
+                }
+            }
         }
+        Debug.Log(collision.tag);
+
+
+
     }
     public IEnumerator loadNextScene()
     {

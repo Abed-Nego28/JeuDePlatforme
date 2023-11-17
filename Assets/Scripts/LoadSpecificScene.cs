@@ -6,12 +6,13 @@ using System.Collections;
 public class LoadSpecificScene : MonoBehaviour
 {
 
+    public bool lastDoor = false;
     public string sceneName;
     public Animator fadeSystem;
 
     private void Awake()
     {
-        if(fadeSystem == null)
+        if (fadeSystem == null)
             fadeSystem = GameObject.FindGameObjectWithTag("FadeSystem").GetComponent<Animator>();
     }
 
@@ -20,13 +21,26 @@ public class LoadSpecificScene : MonoBehaviour
         StartCoroutine(loadNextScene());
     }
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
             Debug.Log("Player has entered the trigger");
         {
             StartCoroutine(loadNextScene());
+            Timer timer = GameObject.FindGameObjectWithTag("Timer").GetComponent<Timer>();
+            if (lastDoor)
+            {
+                if (timer != null)
+                {
+                    timer.StopTimer();
+                }
+            }
         }
+        Debug.Log(collision.tag);
+
+
+
     }
     public IEnumerator loadNextScene()
     {

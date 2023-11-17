@@ -7816,23 +7816,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5095658053161550375, guid: ff7f81efbc4dc486ea7e84c81ff4e18f, type: 3}
       propertyPath: sceneName
-      value: 
+      value: Finish
       objectReference: {fileID: 0}
     - target: {fileID: 6713207318378664996, guid: ff7f81efbc4dc486ea7e84c81ff4e18f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 16.160576
+      value: 47.04505
       objectReference: {fileID: 0}
     - target: {fileID: 6713207318378664996, guid: ff7f81efbc4dc486ea7e84c81ff4e18f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 18.376648
+      value: 46.45249
       objectReference: {fileID: 0}
     - target: {fileID: 6713207318378664996, guid: ff7f81efbc4dc486ea7e84c81ff4e18f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 125.86
+      value: 110.4178
       objectReference: {fileID: 0}
     - target: {fileID: 6713207318378664996, guid: ff7f81efbc4dc486ea7e84c81ff4e18f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 78.98
+      value: 93.0183
       objectReference: {fileID: 0}
     - target: {fileID: 6713207318378664996, guid: ff7f81efbc4dc486ea7e84c81ff4e18f, type: 3}
       propertyPath: m_LocalPosition.z

@@ -12,6 +12,4 @@ public class DontDestroyOnLoadScene : MonoBehaviour
         }
 
     }
-
-
 }

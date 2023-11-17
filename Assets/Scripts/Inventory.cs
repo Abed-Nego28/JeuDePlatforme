@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 using TMPro;
 
 public class Inventory : MonoBehaviour
@@ -13,7 +13,6 @@ public class Inventory : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogWarning("Instance de Inventory déjà présente dans la scène");
             return;
         }
 
@@ -21,17 +20,15 @@ public class Inventory : MonoBehaviour
         instance = this;
     }
 
-    private void Start(){
-           Debug.LogWarning("test");
-            GameObject test = GameObject.FindGameObjectWithTag("coinValue");
-            Debug.LogWarning(test);
-            coinsCountText = GameObject.FindGameObjectWithTag("coinValue").GetComponent<TMP_Text>();
-            Debug.LogWarning(coinsCountText);
+    private void Start()
+    {
+        GameObject test = GameObject.FindGameObjectWithTag("coinValue");
+        coinsCountText = GameObject.FindGameObjectWithTag("coinValue").GetComponent<TMP_Text>();
     }
 
     public void AddCoins(int count)
     {
         coinsCount += count;
-       coinsCountText.text = coinsCount.ToString(); 
+        coinsCountText.text = coinsCount.ToString();
     }
 }

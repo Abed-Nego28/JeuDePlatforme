@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5095658053161550375}
   - component: {fileID: 7763358378528870442}
   m_Layer: 0
-  m_Name: Door 1
+  m_Name: DoorEnd
   m_TagString: FadeSystem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,9 +144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be420878d0b1f4aa6a2f3ff1077acfdd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastDoor: 0
   sceneName: LevelMoyen
-  fadeSystem: {fileID: 0}
+  fadeSystem: {fileID: 7763358378528870442}
 --- !u!95 &7763358378528870442
 Animator:
   serializedVersion: 5
